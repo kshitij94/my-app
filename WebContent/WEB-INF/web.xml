@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <display-name>Firstd</display-name>
+ 	
+	<servlet>
+	<servlet-name>FillupGeoTable</servlet-name>
+	<servlet-class>com.FillupGeoTable</servlet-class>
+	</servlet> 
+	
+	
+	<servlet-mapping>
+	<servlet-name>FillupGeoTable</servlet-name>
+	<url-pattern>/fillupgeotable</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>CreateServlet</servlet-name>
+	<servlet-class>com.CreateServlet</servlet-class>
+	</servlet> 
+	
+	
+	<servlet-mapping>
+	<servlet-name>CreateServlet</servlet-name>
+	<url-pattern>/create</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>GetUnseenPostServlet</servlet-name>
+	<servlet-class>com.GetUnseenPostServlet</servlet-class>
+	</servlet> 
+	
+	
+	<servlet-mapping>
+	<servlet-name>GetUnseenPostServlet</servlet-name>
+	<url-pattern>/getunseen</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>SpamServlet</servlet-name>
+	<servlet-class>com.SpamServlet</servlet-class>
+	</servlet> 
+	
+	
+	<servlet-mapping>
+	<servlet-name>SpamServlet</servlet-name>
+	<url-pattern>/spam</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>SpreadServlet</servlet-name>
+	<servlet-class>com.SpreadServlet</servlet-class>
+	</servlet> 
+	
+	
+	<servlet-mapping>
+	<servlet-name>SpreadServlet</servlet-name>
+	<url-pattern>/spread</url-pattern>
+	</servlet-mapping>
+	
+	
+
+	
+</web-app>
